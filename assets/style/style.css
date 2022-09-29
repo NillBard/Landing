@@ -129,7 +129,7 @@ main {
 }
 
 .robo-hand_header span {
-  background: linear-gradient(307.72deg, #a7f306 98.59%, #f3cd06 2.04%);
+  background: linear-gradient(307.72deg, #a7f306 2.04%, #f3cd06 98.59%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -225,7 +225,7 @@ main {
   top: 205px;
 
   background: linear-gradient(
-    270deg,
+    90deg,
     rgba(255, 255, 255, 0.2) 0%,
     rgba(255, 255, 255, 0) 100%
   );
@@ -239,13 +239,14 @@ main {
   );
 }
 
-.robo-hand_info-block-percentage-text {
+.percentage-text {
   position: absolute;
   font-family: "Plus Jakarta Display";
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   top: 235px;
+  width: 196px;
   left: 325px;
   height: 100px;
   display: flex;
@@ -256,8 +257,7 @@ main {
   color: #ffffff;
 }
 
-.robo-hand_info-block-percentage-text span {
-  width: 200px;
+.percentage-text span {
   height: 36px;
   font-family: "Plus Jakarta Sans";
   font-style: normal;

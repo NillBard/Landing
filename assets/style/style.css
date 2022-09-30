@@ -2,28 +2,27 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: #1a1a1a;
 }
 
 .container {
   margin: 0 auto;
-  position: relative;
   width: 1440px;
   height: 6325px;
-
-  background: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a1a;
 }
 
 nav {
-  position: absolute;
+  margin-top: 48px;
   width: 1308px;
   height: 28px;
-  left: 68px;
-  top: 48px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
 }
 
 .nav_logo {
@@ -92,31 +91,35 @@ nav {
   line-height: 24px;
   color: #ffffff;
 }
+.nav_reg .arrow {
+  width: 23px;
+  height: 23px;
+  background-image: url("/assets/img/arrow-down-left.png");
+}
 
 main {
-  position: absolute;
-  top: 186px;
+  margin-top: 110px;
+  width: 100%;
 }
 
 .robo-hand {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-.robo-hand_header {
-  padding: 0;
+.robo-hand__header {
   width: 1312px;
-  position: absolute;
   height: 141px;
-  left: 64px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  font-size: 110px;
+  font-size: 120px;
 
   text-align: center;
   letter-spacing: 1px;
 
-  margin: 0;
   background: linear-gradient(
     90.01deg,
     #ffffff 0.01%,
@@ -128,142 +131,145 @@ main {
   background-clip: text;
 }
 
-.robo-hand_header span {
+.robo-hand__header span {
   background: linear-gradient(307.72deg, #a7f306 2.04%, #f3cd06 98.59%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.robo-hand_image {
-  position: absolute;
-  width: 1190px;
-  height: 794px;
-
-  background: url("/assets/img/robot-hand-3d-background-presenting-technology-gesture-removebg-preview\ 1.png");
-}
-
-.robo-hand_lightning {
-  position: absolute;
-  width: 751px;
-  height: 794px;
-  left: 439px;
-
-  background: url("/assets/img/robot-hand-3d-background-presenting-technology-gesture-removebg-preview\ 2.png");
-}
-
-.robo-hand_image-sphere {
-  position: absolute;
-  width: 459px;
-  height: 459px;
-  left: 446px;
-  top: 34px;
-
-  background: url("/assets/img/4.png");
-}
-
-.robo-hand_info-block .partners {
+.robo-hand__info-block {
+  margin-top: 64px;
   box-sizing: border-box;
-  position: absolute;
-  width: 202px;
-  height: 160px;
-  left: 64px;
-  top: 205px;
-
-  background: linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 0.2) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  opacity: 0.2;
-  border: 1.08px solid;
-  border-radius: 32px;
-  border-image-source: linear-gradient(
-    270deg,
-    #ffffff 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1312px;
 }
 
-.robo-hand_info-block .partners-text {
+.robo_hand__info-block__left-side {
+  height: 160px;
+  width: 460px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.robo_hand__info-block__left-side .partners {
+  position: relative;
+}
+
+.robo_hand__info-block__left-side .percentage {
+  position: relative;
+}
+
+.partners-wrapper {
+  height: 100%;
+  width: 202px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.08px;
+  border-radius: 32px;
+  opacity: 0.2;
+  background: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.partners-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: linear-gradient(to left, #ffffff, #1a1a1a 100%);
+  border-radius: 32px;
+  opacity: 0.7;
+}
+
+.partners__text {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
   font-family: "Plus Jakarta Display";
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  top: 235px;
-  left: 96px;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
   letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: none;
   color: #ffffff;
 }
 
-.robo-hand_info-block .partners-text p {
-  width: 91px;
-  height: 36px;
+.partners__text span {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 200%;
-  color: #ffffff;
 
+  color: #ffffff;
   opacity: 0.5;
 }
 
-.robo-hand_info-block-percentage {
-  box-sizing: border-box;
-  position: absolute;
+.percentage-wrapper {
+  height: 100%;
   width: 231px;
-  height: 160px;
-  left: 293px;
-  top: 205px;
-
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.2) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  opacity: 0.2;
-  border: 1.08px solid;
+  padding: 1.08px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 32px;
-  border-image-source: linear-gradient(
-    270deg,
+  background: linear-gradient(
+    to right,
     #ffffff 0%,
     rgba(255, 255, 255, 0) 100%
   );
+  opacity: 0.2;
 }
 
-.percentage-text {
+.percentage-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+  background-color: linear-gradient(to right, #ffffff, #1a1a1a 100%);
+  opacity: 0.7;
+}
+
+.percentage__text {
+  width: 100%;
+  height: 100%;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: center;
+  justify-content: center;
   font-family: "Plus Jakarta Display";
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  top: 235px;
-  width: 196px;
-  left: 325px;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  line-height: 52px;
   letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: none;
   color: #ffffff;
 }
 
-.percentage-text span {
-  height: 36px;
+.percentage__text span {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 200%;
+
   color: #ffffff;
   opacity: 0.5;
 }

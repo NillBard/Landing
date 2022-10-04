@@ -894,11 +894,11 @@ main {
 
 .supported {
   box-sizing: border-box;
-  margin-top: 209px;
+  margin: 209px auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 1440px;
   overflow: hidden;
 }
 
@@ -917,13 +917,13 @@ main {
 
 .supported__lists {
   margin-top: 90px;
-  width: 100%;
+  width: 1440px;
 }
 
 .up__list {
   position: relative;
   left: -80px;
-  width: 109%;
+  width: 112%;
   display: flex;
   flex-direction: row;
   align-items: center;

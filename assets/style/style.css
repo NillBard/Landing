@@ -2,11 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #1a1a1a;
 }
 
 .container {
-  margin: 0 auto;
   height: 6325px;
   display: flex;
   flex-direction: column;
@@ -55,20 +53,17 @@ nav {
   height: 20px;
   left: 375px;
   top: 54px;
-
   opacity: 0.5;
 }
 
 .nav_link a {
   width: 90px;
   height: 20px;
-
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-
   color: #ffffff;
 }
 
@@ -77,12 +72,10 @@ nav {
   height: 24px;
   left: 1228px;
   top: 52px;
-
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -97,6 +90,7 @@ nav {
 }
 
 main {
+  width: 100%;
   margin-top: 110px;
   display: flex;
   flex-direction: column;
@@ -158,14 +152,6 @@ main {
   justify-content: space-between;
 }
 
-.robo_hand__info-block__left-side .partners {
-  position: relative;
-}
-
-.robo_hand__info-block__left-side .percentage {
-  position: relative;
-}
-
 .partners-wrapper {
   height: 100%;
   width: 202px;
@@ -174,30 +160,25 @@ main {
   align-items: center;
   padding: 1.08px;
   border-radius: 32px;
-  opacity: 0.2;
-  background: linear-gradient(to left, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to left, #484848, #1a1a1a);
 }
 
 .partners-content {
+  padding-left: 32px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0;
-  margin: 0;
   width: 100%;
   height: 100%;
-  background-color: linear-gradient(to left, #ffffff, #1a1a1a 100%);
+  background: linear-gradient(to left, #232323, #1a1a1a);
   border-radius: 32px;
-  opacity: 0.7;
 }
 
 .partners__text {
-  position: absolute;
-  top: 30px;
-  left: 32px;
   display: flex;
   flex-direction: column;
   height: 100px;
+  width: 100%;
   justify-content: space-between;
   font-family: "Plus Jakarta Display";
   font-style: normal;
@@ -205,16 +186,15 @@ main {
   font-size: 40px;
   line-height: 52px;
   letter-spacing: 1.5px;
-  text-transform: uppercase;
-  background: none;
   color: #ffffff;
 }
 
 .partners__text span {
   font-family: "Plus Jakarta Sans";
+
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 200%;
   color: #ffffff;
   opacity: 0.5;
@@ -228,27 +208,22 @@ main {
   justify-content: center;
   align-items: center;
   border-radius: 32px;
-  background: linear-gradient(
-    to right,
-    #ffffff 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  opacity: 0.2;
+  background: linear-gradient(to right, #484848, #1a1a1a);
 }
 
 .percentage-content {
+  padding-left: 40px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-items: center;
   width: 100%;
   height: 100%;
   border-radius: 32px;
-  background-color: linear-gradient(to right, #ffffff, #1a1a1a 100%);
-  opacity: 0.7;
+  background: linear-gradient(to right, #232323, #1a1a1a);
 }
 
 .percentage__text {
   height: 100px;
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -263,21 +238,19 @@ main {
   text-transform: uppercase;
   background: none;
   color: #ffffff;
-  top: 30px;
-  left: 32px;
 }
 
 .percentage__text span {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 200%;
   color: #ffffff;
-  opacity: 0.5;
   flex-wrap: nowrap;
   height: 36px;
   width: 231px;
+  opacity: 0.5;
 }
 
 .right-side {
@@ -297,7 +270,6 @@ main {
   width: 373px;
   height: 120px;
   letter-spacing: -0.03em;
-
   color: #ffffff;
   opacity: 0.5;
 }
@@ -313,7 +285,6 @@ main {
 .started_button {
   width: 200px;
   height: 72px;
-
   background: #ffffff;
   border-radius: 120px;
   font-family: "Plus Jakarta Sans";
@@ -322,7 +293,6 @@ main {
   font-size: 20px;
   line-height: 25px;
   text-align: center;
-
   color: #1a1a1a;
 }
 .talk_block {
@@ -409,7 +379,7 @@ main {
 }
 
 .running-line__content {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   height: 120px;
@@ -418,34 +388,28 @@ main {
 }
 
 .wrapper {
-  background: transparent;
   display: flex;
   justify-content: space-between;
-  width: 200%;
   animation: infinite-line 5s infinite linear;
+  width: 200%;
 }
 
 .advertising-wrapper {
-  width: 100%;
-  background: transparent;
+  display: flex;
   white-space: nowrap;
+}
+
+.advertising {
+  display: flex;
+  width: 1003px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .running-line__bottom {
   height: 28px;
   width: 100%;
   background: rgba(169, 169, 169, 0.2);
-}
-
-.advertising {
-  white-space: nowrap;
-  background: transparent;
-  display: flex;
-  width: 1003px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background: none;
 }
 
 .advertising__text {
@@ -463,9 +427,9 @@ main {
   background-clip: text;
 }
 
-.advertising__img {
-  width: 61px;
-  height: 61px;
+/* .advertising__img {
+  width: 60px;
+  height: 60px;
   background: url("/assets/img/Star\ 1.png");
   object-fit: cover;
   color: #ffff;
@@ -473,7 +437,7 @@ main {
   align-items: center;
   justify-content: center;
   font-size: 14px;
-}
+} */
 
 @keyframes infinite-line {
   0% {
@@ -616,6 +580,7 @@ main {
   border-radius: 120px;
   border: 1px solid #484848;
   padding: 20px 32px;
+  background: #1a1a1a;
 }
 
 .learn-button__content {

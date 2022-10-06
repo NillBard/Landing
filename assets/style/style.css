@@ -395,6 +395,7 @@ main {
 .running-line {
   height: 148px;
   overflow: hidden;
+  width: 100%;
 }
 
 .running-line__content {

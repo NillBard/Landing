@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 
-nav {
+.nav {
   margin-top: 48px;
   width: 1308px;
   height: 28px;
@@ -23,10 +23,7 @@ nav {
 }
 
 .nav__logo {
-  width: 84px;
   height: 28px;
-  left: 68px;
-  top: 48px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -48,15 +45,12 @@ nav {
   align-items: flex-start;
   padding: 0px;
   gap: 64px;
-  width: 695px;
   height: 20px;
-  left: 375px;
-  top: 54px;
   cursor: pointer;
+  list-style-type: none;
 }
 
-.nav__links a {
-  width: 90px;
+.nav__links li {
   height: 20px;
   font-family: "Plus Jakarta Sans";
   font-style: normal;
@@ -66,17 +60,23 @@ nav {
   color: #8c8c8c;
 }
 
-.nav__links :hover {
+.nav__links li:hover {
   transform: scale(1.1);
   color: #ffffff;
+}
+
+.nav__logo:hover {
+  transform: scale(1.1);
+}
+
+.nav__reg:hover {
+  transform: scale(1.1);
 }
 
 .nav__reg {
   cursor: pointer;
   width: 148px;
   height: 24px;
-  left: 1228px;
-  top: 52px;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -87,10 +87,6 @@ nav {
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
-}
-
-nav :hover:nth-child(odd) {
-  transform: scale(1.1);
 }
 
 .nav__reg .arrow {
@@ -743,7 +739,6 @@ main {
 .slider__items {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
 }
 
 .slider__item {
@@ -1046,12 +1041,16 @@ footer {
   line-height: 28px;
   text-align: right;
   list-style: none;
-  color: #ffffff;
   height: 28px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   cursor: pointer;
+}
+
+.right-block ul a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .right-block__down-side {
@@ -1077,6 +1076,7 @@ footer {
 }
 
 .docs {
+  cursor: pointer;
   width: 375px;
   display: flex;
   flex: row;

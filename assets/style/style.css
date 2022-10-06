@@ -992,7 +992,7 @@ main {
 
 footer {
   box-sizing: border-box;
-  margin-top: 180px;
+  margin: 180px 0 84px;
   width: 1312px;
   display: flex;
   flex-direction: row;

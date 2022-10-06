@@ -13,16 +13,23 @@
 }
 
 .nav {
-  margin-top: 48px;
-  width: 1308px;
+  margin: 48px;
+  width: 1440px;
   height: 28px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__wrapper {
+  width: 1308px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .nav__logo {
+  width: 84px;
   height: 28px;
   font-family: "Raleway";
   font-style: normal;
@@ -40,6 +47,7 @@
 }
 
 .nav__links {
+  width: 695px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -99,11 +107,11 @@ main {
   margin-top: 110px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
 .robo-hand {
-  margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -112,6 +120,10 @@ main {
 }
 
 .robo-hand__header {
+  width: 1312px;
+}
+
+.robo-hand__header h1 {
   height: 141px;
   font-family: "Raleway";
   font-style: normal;
@@ -451,7 +463,7 @@ main {
 
 .technology {
   box-sizing: border-box;
-  margin: 179px auto 0;
+  margin-top: 179px;
   width: 1312px;
   display: flex;
   flex-direction: column;
@@ -685,7 +697,7 @@ main {
 .slider {
   box-sizing: border-box;
   width: 1312px;
-  margin: 206px auto 0;
+  margin-top: 206px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -762,7 +774,7 @@ main {
 
 .quotation {
   box-sizing: border-box;
-  margin: 200px auto 0;
+  margin-top: 200px;
   width: 1312px;
   display: flex;
   flex-direction: column;
@@ -978,9 +990,8 @@ main {
 }
 
 footer {
-  margin-top: 180px;
   box-sizing: border-box;
-  margin: 180px auto 71px;
+  margin-top: 180px;
   width: 1312px;
   display: flex;
   flex-direction: row;

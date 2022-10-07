@@ -83,6 +83,13 @@
   color: #ffffff;
 }
 
+.nav__arrow {
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/sprait.png");
+  background-position: -1127px -310px;
+}
+
 main {
   margin-top: 110px;
   display: flex;
@@ -311,23 +318,37 @@ main {
   position: absolute;
   height: 794px;
   width: 1190px;
+  background-image: url("../img/Big_picture_sprite.png");
+  background-position: 0 -795px;
 }
 
 .image__lightning {
   left: 439px;
+  width: 754px;
+  height: 791px;
   position: absolute;
+  background-image: url("../img/Big_picture_sprite.png");
+  background-position: -721px 0;
 }
 
 .image__sphere {
   position: absolute;
   left: 446px;
   top: 34px;
+  width: 459px;
+  height: 459px;
+  background-image: url("../img/Big_picture_sprite.png");
+  background-position: 0 -1590px;
 }
 
 .image__vector {
   position: absolute;
   left: 1149px;
   top: 432px;
+  height: 379px;
+  width: 100px;
+  background-image: url("../img/Big_picture_sprite.png");
+  background-position: -1221.5px -1100px;
 }
 
 .running-line {
@@ -346,7 +367,7 @@ main {
   width: 200%;
   display: flex;
   min-width: 4332s.5px;
-  animation: infinite-line 7s infinite linear;
+  /* animation: infinite-line 7s infinite linear; */
   height: 100%;
   justify-content: space-around;
   row-gap: 80px;
@@ -386,6 +407,8 @@ main {
 .advertising__img {
   width: 60px;
   height: 60px;
+  background-image: url("../img/sprait.png");
+  background-position: -1022px -290px;
 }
 
 @keyframes infinite-line {
@@ -423,6 +446,8 @@ main {
   cursor: pointer;
   width: 125px;
   height: 125px;
+  background-image: url("../img/sprait.png");
+  background-position: -1300px -260px;
 }
 
 .technology__header .arrow:hover {
@@ -506,15 +531,24 @@ main {
 }
 
 .block__content li {
+  display: flex;
+  align-items: center;
   list-style: none;
-  background: url("../img/success.png") no-repeat 0 50%;
-  padding-left: 48px;
   height: 40px;
   font-family: "Plus Jakarta Sans";
   font-weight: 400;
   font-size: 20px;
   line-height: 200%;
   color: #ffffff;
+  gap: 16px;
+}
+
+.success-img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url("../img/sprait.png");
+  background-position: -1086px -303px;
 }
 
 .learn-button {
@@ -538,9 +572,17 @@ main {
   color: #ffffff;
 }
 
-.learn-button__content img {
+.learn-button__content div {
   width: 32px;
   height: 32px;
+  background-image: url("../img/sprait.png");
+  background-position: -1120px -302px;
+}
+
+.gray-sphere {
+  width: 721px;
+  height: 721px;
+  background-image: url("../img/Big_picture_sprite.png");
 }
 
 .development {
@@ -577,6 +619,36 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.item__img {
+  width: 160px;
+  height: 180px;
+  background: url("../img/sprait.png");
+}
+
+.i1 {
+  background-position: -480px 0;
+}
+
+.i2 {
+  background-position: -640px 0;
+}
+
+.i3 {
+  background-position: -800px 0;
+}
+
+.i4 {
+  background-position: 0 0;
+}
+
+.i5 {
+  background-position: -160px 0;
+}
+
+.i6 {
+  background-position: -320px 0;
 }
 
 .list__item .content {
@@ -616,6 +688,17 @@ main {
   justify-content: space-between;
 }
 
+.arrow-column div {
+  width: 82px;
+  height: 82px;
+  background-image: url("../img/sprait.png");
+  background-position: 0 -260px;
+}
+
+.arrow-column .left-arrow {
+  background-position: -82px -260px;
+}
+
 .slider {
   box-sizing: border-box;
   width: 1312px;
@@ -645,18 +728,19 @@ main {
   border: none;
   width: 240px;
   display: flex;
+  background: url("../img/sprait.png");
 }
 
 .slider__buttons .prev {
   width: 120px;
   height: 120px;
-  background: url("../img/Slider_prev.png");
+  background-position: -332px -260px;
 }
 
 .slider__buttons .next {
   width: 120px;
   height: 120px;
-  background: url("../img/Slider_next.png");
+  background-position: -212px -260px;
 }
 
 .slider__wrapper {
@@ -676,7 +760,29 @@ main {
   justify-content: space-between;
 }
 
-.slider__item div {
+.slides {
+  height: 400px;
+  width: 320px;
+  background-image: url("../img/slider.png");
+}
+
+.slide1 {
+  background-position: 0 0;
+}
+
+.slide2 {
+  background-position: -320px 0;
+}
+
+.slide3 {
+  background-position: -640px 0;
+}
+
+.slide4 {
+  background-position: -960px 0;
+}
+
+.slider__item .item_text {
   width: 260px;
   height: 96px;
   font-family: "Raleway";
@@ -750,9 +856,10 @@ main {
 }
 
 .author__line {
-  background: url("../img/Vector\ 2.png");
+  background-image: url("../img/sprait.png");
   width: 64px;
-  height: 2px;
+  height: 50px;
+  background-position: -1190px -290px;
 }
 
 .author__text {
@@ -764,25 +871,26 @@ main {
   color: #ffffff;
 }
 
-.arrow__prev {
+.quotation__slide button {
   width: 142px;
   height: 142px;
-  background: url("../img/Group\ 770590.png");
-  object-fit: cover;
+  background: url("../img/sprait.png");
+  border: none;
 }
 
-.arrow__prev:hover {
-  background: url("../img/quo-arr-left-active.png");
+.quotation__slide .arrow__prev {
+  background-position: -464px -250px;
 }
 
-.arrow__next {
-  width: 142px;
-  height: 142px;
-  background: url("../img/quo-arr-right.png");
-  object-fit: cover;
+.quotation__slide .arrow__prev:hover {
+  background-position: -736px -250px;
 }
-.arrow__next:hover {
-  background: url("../img/Group\ 770574.png");
+
+.quotation__slide .arrow__next {
+  background-position: -606px -250px;
+}
+.quotation__slide .arrow__next:hover {
+  background-position: -878px -250px;
 }
 
 .supported {
@@ -885,7 +993,37 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.9;
+}
+
+.brand-img {
+  width: 180px;
+  height: 70px;
+  background: url("../img/sprait.png");
+}
+
+.brand1 {
+  background-position: 0 -187px;
+}
+.brand2 {
+  background-position: -180px -185px;
+}
+.brand3 {
+  background-position: -370px -185px;
+}
+.brand4 {
+  background-position: -589px -187px;
+}
+.brand5 {
+  background-position: -790px -187px;
+}
+.brand6 {
+  background-position: -950px -185px;
+}
+.brand7 {
+  background-position: -1100px -184px;
+}
+.brand8 {
+  background-position: -1280px -185px;
 }
 
 footer {
@@ -965,8 +1103,9 @@ footer {
 .footer__navigation div {
   margin-top: 52px;
   width: 853px;
-  height: 2px;
-  background: url("../img/long__vector.png");
+  height: 5px;
+  background: url("../img/Big_picture_sprite.png");
+  background-position: -500px -1835px;
 }
 
 .docs {
